@@ -45,7 +45,7 @@ Clone the repository with submodules:
 
 ```bash
 git clone --recurse-submodules https://github.com/MHS-Drones/AVR-2025
-cd AVR-2025
+cd ~/AVR-2025
 ```
 
 If you already have the repo cloned, run
@@ -98,12 +98,7 @@ This builds the Docker images locally rather than using prebuilt ones from GitHu
 
 To run and test code, you'll want to run the docker files
 
-Run this bottom command if you haven't cloned the original bell file
-```bash
-sudo git clone --recurse-submodules https://github.com/bellflight/AVR-2022 /root/AVR-2022
-```
-
-Updating to latest version of the code (If you already cloned the original bell file)
+Updating to latest version of the code
 ```bash
 cd ~/AVR-2025
 git pull --recurse-submodules
