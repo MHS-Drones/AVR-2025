@@ -98,23 +98,31 @@ This builds the Docker images locally rather than using prebuilt ones from GitHu
 
 To run and test code, you'll want to run the docker files
 
-Updating to latest version of the code
+Run this bottom command if you haven't cloned the original bell file
 ```bash
+sudo git clone --recurse-submodules https://github.com/bellflight/AVR-2022 /root/AVR-2022
+```
+
+Updating to latest version of the code (If you already cloned the original bell file)
+```bash
+cd ~/AVR-2025
+git pull --recurse-submodules
 cd ~/AVR-2025/VMC/scripts
 git pull
 ./setup.py
 ```
 
-run the modules
+To run the main VMC system (default modules)
 
 ```bash
-cd ~/AVR-2025/VMC/
+cd ~/AVR-2025/VMC
 ./start.py run
 ```
 
-To run the Sandbox environment module specifically, use the  sandbox.py script.
+To run specific modules (e.g., Sandbox)
 
 ```bash
+cd ~/AVR-2025/VMC
 ./start.py run sandbox
 ```
 
