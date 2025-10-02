@@ -1,8 +1,8 @@
-# AVR-2022
+# AVR-2025
 
 ## Project Management
 
-For Bell employees and partners, work items are tracked on [Trello](https://trello.com/bellavr).
+idk lol
 
 ## Structure
 
@@ -93,3 +93,34 @@ script and add `--dev` for development.
 
 Note, with `start.py` commands, make sure to add `--local` to the command.
 This builds the Docker images locally rather than using prebuilt ones from GitHub CR.
+
+## Docker
+
+To run and test code, you'll want to run the docker files
+
+Updating to latest version of the code
+```bash
+cd ~/AVR-2025/VMC/scripts
+git pull
+./setup.py
+```
+
+run the modules
+
+```bash
+cd ~/AVR-2025/VMC/
+./start.py run
+```
+
+To run the Sandbox environment module specifically, use the  sandbox.py script.
+
+```bash
+./start.py run sandbox
+```
+
+Any time changes are made to your sandbox.py script, you will need to rebuild the module before running again.
+
+```bash
+./start.py build sandbox
+```
+
