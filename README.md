@@ -44,8 +44,8 @@ Refer to individual module README files for specific instructions.
 Clone the repository with submodules:
 
 ```bash
-git clone --recurse-submodules https://github.com/bellflight/AVR-2022
-cd AVR-2022
+git clone --recurse-submodules https://github.com/MHS-Drones/AVR-2025
+cd AVR-2025
 ```
 
 If you already have the repo cloned, run
@@ -108,7 +108,6 @@ Updating to latest version of the code (If you already cloned the original bell 
 cd ~/AVR-2025
 git pull --recurse-submodules
 cd ~/AVR-2025/VMC/scripts
-git pull
 ./setup.py
 ```
 
